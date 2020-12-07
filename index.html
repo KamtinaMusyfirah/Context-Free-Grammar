@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Solway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <title>Context Free Grammar</title>
+  </head>
+  <body>
+    <!-- Start header -->
+    <header class="top-header">
+      <nav class="navbar header-nav navbar-expand-lg">
+          <div class="container-fluid">
+            <nav class="navbar ">
+              <span class="navbar-brand mb-0 h1">Kamtina Musyfirah</span>
+            </nav>
+
+              <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                  <ul class="navbar-nav">
+                      <li><a class="nav-link active" href="#">Home</a></li>
+                      <li><a class="nav-link" href="https://kamtinamusyfirah.github.io/tba-assignment1/">Teori Bahasa dan Otomata</a></li>
+                      <li><a class="nav-link" href="https://kamtinamusyfirah.github.io/tba-assignment2/">Notasi Big O</a></li>
+                      <li><a class="nav-link" href="https://kamtinamusyfirah.github.io/-Non-Deterministic-Finite-Automata/">DFA</a></li>
+                      <li><a class="nav-link" href="https://kamtinamusyfirah.github.io/RegulerExpression/">Regular Expression</a></li>
+                      <li><a class="nav-link" href="#">About</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+  <!-- End header -->
+
+  <!--Carousel-->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Teori Bahasa dan Otomata</h1>
+    </div>
+  </div>
+  <!--End Carousel-->
+  <h1>Context Free Grammar</h1>
+
+  <!-- section -->
+  <div class="container">
+    <div class="card">
+        <div class="contentBx">
+            <h2>Context Free Grammar (CFG)</h2>
+            <p>
+              CFG atau Context Free Grammar adalah tata bahasa formal di mana setiap aturan produksinya dalam bentuk <br>
+              <center>α → β</center>
+            </p>
+            <p>
+              di mana α adalah pemproduksi, dan β adalah hasil produksi. Batasannya hanyalah ruas kiri adalah sebuah simbol variabel. Dan pada ruas kanan bisa 
+              berupa terminal, symbol, variable ataupun ɛ, Contoh aturan produksi yang termasuk CFG adalah seperti berikut ini:
+            </p>
+            <center>
+              X → bY | Za <br>
+              Y → aY | b <br>
+              Z → bZ | ɛ <br>
+            </center>
+            <p>
+              CFG adalah tata bahasa yang mempunyai tujuan sama seperti halnya tata bahasa regular yaitu merupakan suatu cara untuk menunjukkan bagaimana menghasilkan suatu untai-untai dalam sebuah bahasa.
+            </p>
+            <p>
+              CFG perlu disederhankan dengan tujuan untuk melakukan pembatasan sehingga tidak menghasilkan pohon penurunan yang memiliki kerumitan 
+              yang tak perlu atau aturan produksi tak berarti. Berikut merupakan langkah-langkah dalam melakukan penyederhanaan CFG:
+              
+              <ol>
+                <li>Eliminasi ɛ-production</li>
+                <li>Eliminasi unit production</li>
+                <li>Eliminasi useless symbol</li>
+              </ol>
+            </p>
+            
+        </div>
+    </div>
+
+    <div class="card">
+      <div class="contentBx">
+          <h2>Pemanfaatan Context Free Grammar</h2>
+          <p>
+            <ol>
+              <li>Parsing
+                <p>
+                  Context Free Grammar ( CFG ) menjadi dasar dalam pembentukan suatu parser/proses analisis sintaks. Bagian sintaks dalam suatu kompilator kebanyakan 
+                  di definisikan dalam context free grammar. Pohon penurunan ( derivation tree/parse tree) berguna untuk menggambarkan 
+                  simbol-simbol variabel menjadi simbol-simbol terminal setiap simbol variabel akan di turunkan menjadi terminal sampai tidak ada yang belum tergantikan.
+                </p>
+                <p>
+                  Proses penurunan / parsing bisa dilakukan dengan cara sebagai berikut :
+                  <ol>
+                    <li>Penurunan kiri (leftmost derivation): simbol variabel kiri yang di perluas terlebih dahulu.</li>
+                    <li>Penurunan kanan ( rightmost derivation ) : simbol variabel kanan yang diperluas terlebih dahulu.</li>
+                  </ol>
+                </p>
+              </li>
+              <li>Ambiguitas
+                <p>
+                  Ambiguitas terjadi bila terdapat lebih dari satu pohon penurunan yang berbeda untuk memperoleh suatu string. 
+                  Sebuah string yang mempunyai lebih dari satu pohon sintaks disebut string ambigu (ambiguous). 
+                  Grammar yang menghasilkan paling sedikit sebuah string ambigu disebut grammar ambigu.
+                </p>
+            </ol>
+          </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="contentBx">
+          <h2>Sumber</h2>
+          <p>
+            <a href="https://socs.binus.ac.id/2018/12/20/penyederhanaan-context-free-grammar/">https://socs.binus.ac.id/2018/12/20/penyederhanaan-context-free-grammar/</a> <br>
+            <a href="https://fairuzelsaid.wordpress.com/2011/06/16/tbo-context-free-grammar-cfg/">https://fairuzelsaid.wordpress.com/2011/06/16/tbo-context-free-grammar-cfg/</a>
+          </p>
+      </div>
+    </div>
+
+  <div class="about1">
+    <h2>ABOUT</h2>
+    <hr>
+  </div>
+
+  <div class="about">
+    <div class="box">
+      <div class="icon">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+      </div>
+      <div class="details">
+        <h3>Sinjai</h3>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="icon">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </div>
+      <div class="details">
+        <h3>KamtinaMusyfirah</h3>
+      </div>
+    </div>
+    
+    <div class="box">
+      <div class="icon">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      </div>
+      <div class="details">
+        <h3>kamtinamusyfirah12@gmail.com</h3>
+      </div>
+    </div>
+  </div>
+  <!-- end section -->
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
